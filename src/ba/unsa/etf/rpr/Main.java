@@ -6,6 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import static javafx.scene.layout.Region.USE_COMPUTED_SIZE;
+
 public class Main extends Application {
 
     public static void main(String[] args) {
@@ -15,7 +17,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/main.fxml"));
-        stage.setScene(new Scene(root));
+        stage.setScene(new Scene(root, USE_COMPUTED_SIZE, USE_COMPUTED_SIZE));
         stage.toFront();
         stage.show();
     }

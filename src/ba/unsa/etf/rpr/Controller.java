@@ -1,13 +1,86 @@
 package ba.unsa.etf.rpr;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
+    public Button btnOne;
+    public Button btnTwo;
+    public Button btnThree;
+    public Button btnFour;
+    public Button btnFive;
+    public Button btnSix;
+    public Button btnSeven;
+    public Button btnEight;
+    public Button btnNine;
+    public Button btnPercentage;
+    public Button btnDevide;
+    public Button btnMultiple;
+    public Button btnZero;
+    public Button btnDecimal;
+    public Button btnEqual;
+    public Button btnPlus;
+    public Button btnMinus;
+    public TextField fieldResult;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
+    }
+
+    public void btnOneClick(ActionEvent actionEvent) {
+    }
+
+    public void btnTwoClick(ActionEvent actionEvent) {
+    }
+
+    public void btnThreeClick(ActionEvent actionEvent) {
+    }
+
+    public void btnFourClick(ActionEvent actionEvent) {
+    }
+
+    public void btnFiveClick(ActionEvent actionEvent) {
+    }
+
+    public void btnSixClick(ActionEvent actionEvent) {
+    }
+
+    public void btnSevenClick(ActionEvent actionEvent) {
+    }
+
+    public void btnEightClick(ActionEvent actionEvent) {
+    }
+
+    public void btnNineClick(ActionEvent actionEvent) {
+    }
+
+    public void btnPercentageClick(ActionEvent actionEvent) {
+    }
+
+    public void btnDevideClick(ActionEvent actionEvent) {
+    }
+
+    public void btnMultipleClick(ActionEvent actionEvent) {
+    }
+
+    public void btnZeroClick(ActionEvent actionEvent) {
+    }
+
+    public void btnDecimalClick(ActionEvent actionEvent) {
+    }
+
+    public void btnEqualClick(ActionEvent actionEvent) {
+    }
+
+    public void btnPlusClick(ActionEvent actionEvent) {
+    }
+
+    public void btnMinusClick(ActionEvent actionEvent) {
     }
 }
