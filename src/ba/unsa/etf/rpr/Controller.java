@@ -19,7 +19,7 @@ public class Controller implements Initializable {
     public Button btnEight;
     public Button btnNine;
     public Button btnPercentage;
-    public Button btnDevide;
+    public Button btnDivide;
     public Button btnMultiple;
     public Button btnZero;
     public Button btnDecimal;
@@ -63,9 +63,6 @@ public class Controller implements Initializable {
     public void btnPercentageClick(ActionEvent actionEvent) {
     }
 
-    public void btnDevideClick(ActionEvent actionEvent) {
-    }
-
     public void btnMultipleClick(ActionEvent actionEvent) {
     }
 
@@ -82,5 +79,8 @@ public class Controller implements Initializable {
     }
 
     public void btnMinusClick(ActionEvent actionEvent) {
+    }
+
+    public void btnDivideClick(ActionEvent actionEvent) {
     }
 }
