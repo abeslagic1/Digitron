@@ -1,14 +1,16 @@
 package ba.unsa.etf.rpr;
 
+import javafx.beans.property.SimpleStringProperty;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller implements Initializable {
+public class Controller {
     public Button btnOne;
     public Button btnTwo;
     public Button btnThree;
@@ -26,11 +28,32 @@ public class Controller implements Initializable {
     public Button btnEqual;
     public Button btnPlus;
     public Button btnMinus;
-    public TextField fieldResult;
+    public Label labelaDisplay;
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
+    //Ovdje je potrebno napraviti jednostruko povezivanje.
+    // Prvo dodajem SimpleStringProperty
 
+    public SimpleStringProperty rezultat;
+
+    // Drugo, kreiramo settere i getter.
+
+
+    public String getRezultat() {
+        return rezultat.get();
+    }
+
+    public SimpleStringProperty rezultatProperty() {
+        return rezultat;
+    }
+
+    public void setRezultat(String rezultat) {
+        this.rezultat.set(rezultat);
+    }
+
+    // Trece, treba ga popuniti u konstruktoru
+
+    public Controller(){
+        rezultat = new SimpleStringProperty("");
     }
 
     public void btnOneClick(ActionEvent actionEvent) {
